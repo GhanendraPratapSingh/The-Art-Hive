@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.cssintegrity="
         sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
 
 
 
@@ -270,7 +272,7 @@
 
 
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
         .navbar {
             position: fixed;
             top: 168px;
@@ -455,6 +457,23 @@
         color: black;
     }
 
+    .is-drilldown-submenu-parent>a:after {
+        border-color: transparent transparent transparent #fff;
+    }
+
+    .js-drilldown-back>a:before {
+        border-color: transparent #fff transparent transparent;
+    }
+
+    .dropdown.menu>li.is-dropdown-submenu-parent>a:after {
+        border-color: #fff transparent transparent;
+    }
+
+    .is-dropdown-submenu .is-dropdown-submenu-parent.opens-right>a:after {
+        border-color: transparent transparent transparent #fff;
+    }
+
+
 
 
 
@@ -498,7 +517,13 @@
                         <ul id="drop1" class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Long Term Program</a></li>
                             <li><a class="dropdown-item" href="#">Weekend workshops</a></li>
-                            <li><a class="dropdown-item" href="d-art-labs">Art Labs</a></li>
+                            <li><a class="dropdown-item" href="#">Art Labs</a>
+                                <ul class="menu">
+                                    <li><a href="d-kids-art-labs">Kids Labs</a></li>
+                                    <li><a href="d-toddler-labs">Toddler Lab</a></li>
+
+                                </ul>
+                            </li>
                             <li><a class="dropdown-item" href="#">Private Art Party</a></li>
                         </ul>
                     </li>
@@ -525,10 +550,13 @@
                         <a class="nav-link" href="#">AWARD AND MEDIA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CAREER</a>
+                        <a class="nav-link" href="career">CAREER</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US</a>
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact">CONTACT US</a>
                     </li>
 
                 </ul>
@@ -697,6 +725,7 @@
             });
         });
     </script>
+
     </div>
     </div>
 

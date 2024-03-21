@@ -29,12 +29,6 @@ include 'header.php';
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
     <style>
-        body {
-            /* font-family: "Raleway", sans-serif !important; */
-
-            font-family: "Poppins" !important;
-        }
-
         .main {
             /* font-family: "Raleway", sans-serif !important; */
             font-family: "Poppins" !important;
@@ -202,15 +196,18 @@ include 'header.php';
         }
 
         .card-text2 {
-            font-size: 33px;
+            font-size: 30px;
+            text-align: center;
             color: black;
             font-weight: bold;
             /* font-family: "Raleway", sans-serif !important; */
             font-family: "Poppins" !important;
-            padding-left: 71px;
+            padding-left: 0px;
+            margin-left: -62px;
 
 
         }
+
 
         #title {
             font-size: 25px;
@@ -228,9 +225,14 @@ include 'header.php';
             border-style: solid;
             /* font-family: "Raleway", sans-serif !important; */
             font-family: "Poppins" !important;
-            padding: 0px;
+            padding: 0px 26px 0px 0px;
 
 
+        }
+
+        .card {
+            border: none;
+            margin-left: 52px;
         }
 
         .cardhead {
@@ -242,7 +244,7 @@ include 'header.php';
             background-color: inherit;
             background-color: black;
             color: white;
-            width: 140px;
+            width: 122px;
         }
 
         .cardli {
@@ -333,7 +335,7 @@ include 'header.php';
             /* font-family: "Raleway", sans-serif !important; */
             font-family: "Poppins" !important;
 
-            font-size: 22px;
+            font-size: 16px;
             font-weight: bold;
             text-align: center;
 
@@ -351,28 +353,33 @@ include 'header.php';
         .btn {
             display: flex;
             justify-content: center;
-            color: white;
+            color: black;
             font-size: 20px;
             /* font-family: "Raleway", sans-serif !important; */
             font-family: "Poppins" !important;
             text-align: center;
             align-items: center;
             background-color: #FEA1C0;
-            margin-left: 405px;
+            margin-left: 320px;
             margin-top: 40px;
         }
 
         .containercard li {
-            color: white;
+            color: black;
             /* font-family: "Raleway", sans-serif !important; */
             font-family: "Poppins" !important;
+            margin-left: 45px;
+        }
 
+        h4 {
+            font-size: 18px;
+            color: black;
         }
 
         .btn2 {
             display: flex;
             justify-content: center;
-            color: white;
+            color: black;
             font-size: 20px;
             /* font-family: "Raleway", sans-serif !important; */
             font-family: "Poppins" !important;
@@ -401,11 +408,11 @@ include 'header.php';
             margin-top: 20px;
         }
 
-        .card {
+        /* .card {
             width: 35rem;
             height: 22rem;
             /* margin-left: 96px; */
-        }
+        /* }  */
 
         .cardp {
             height: 22rem;
@@ -441,17 +448,29 @@ include 'header.php';
             font-weight: 800;
         }
 
+        .cardkids {
+            margin-right: 40px;
+        }
+
 
 
 
         /* Media queries for responsiveness */
         @media (max-width: 768px) {
+
+            .main {
+                padding: 0px;
+            }
+
             p.card-text2 {
                 padding-left: 0px;
             }
 
             #we-are-body {
-                margin-left: 0px !important;
+
+                margin-left: -7px !important;
+                padding-right: 0px;
+
             }
 
             .childimagewrap img {
@@ -513,11 +532,11 @@ include 'header.php';
 
 
             .heading {
-                margin-left: 40px;
+                margin-left: 0px;
             }
 
             .heading3 {
-                margin-left: 40px
+                margin-left: 0px;
             }
 
             .heading2 {
@@ -526,9 +545,9 @@ include 'header.php';
 
 
 
-            #para {
-                padding-left: 0px !important;
-            }
+
+
+            .para {}
 
             .btncenter {
                 margin-left: -40px;
@@ -538,18 +557,22 @@ include 'header.php';
             .container2 {
                 margin-left: 14px;
                 text-align: center;
+                margin-top: 200px;
             }
 
             p.card-text2 {
                 padding-left: 0px;
+                padding-left: 0px;
+                font-size: 1.5rem;
+                margin-top: 25px;
             }
 
             .btn {
-                margin-left: 242px;
+                margin-left: 122px;
             }
 
             .btn2 {
-                margin-left: 71px;
+                margin-left: 0px;
             }
 
 
@@ -557,6 +580,12 @@ include 'header.php';
                 margin-left: 0;
                 margin-top: 90px;
             }
+
+            .containercard h2 {
+                font-size: 1.5rem;
+                margin-top: -120px;
+            }
+
 
 
             .imgdwn {
@@ -573,13 +602,8 @@ include 'header.php';
                 margin-left: 0px !important;
             }
 
-            .heading {
-                margin-left: 40px;
-            }
 
-            .heading3 {
-                margin-left: 40px
-            }
+
 
             .heading2 {
                 margin-left: 54px;
@@ -588,6 +612,8 @@ include 'header.php';
             #para {
                 padding-left: 0px !important;
                 margin-top: 20px;
+                font-size: 1.2rem;
+                margin-bottom: 20px;
                 /* font-family: "Garet Light" !important; */
                 font-family: "Poppins" !important;
             }
@@ -595,7 +621,7 @@ include 'header.php';
 
             .navbar {
                 position: fixed;
-                top: 168px;
+                top: 250px;
                 width: 100%;
                 z-index: 1000;
                 background-color: transparent !important;
@@ -614,14 +640,16 @@ include 'header.php';
             .collapse.show {
                 display: flex;
                 justify-content: center;
-                margin-top: 34px;
+                margin-top: -125px;
             }
 
             ul.navbar-nav {
                 margin-bottom: -55px !important;
-                margin-right: 300px !important;
-                text-align: justify !important;
+                margin-right: 180px !important;
+                margin-top: -415px !important;
+
             }
+
 
             .headinghead {
                 font-size: 10px;
@@ -681,7 +709,7 @@ include 'header.php';
 
             /* Show the navbar when it's expanded */
             .navbar-collapse.show {
-                transform: translateX(29%);
+                transform: translateX(50%);
                 /* Move the navbar into view */
             }
 
@@ -740,6 +768,7 @@ include 'header.php';
 
             button.navbar-toggler {
                 margin-top: -220px;
+                font-size: 20px;
             }
 
             #drop1 {
@@ -755,16 +784,85 @@ include 'header.php';
             }
 
             ul li {
-                margin-right: 24px;
+                margin-right: -11px;
+            }
+
+            .containercard li {
+
+                margin-left: 5px;
             }
 
             a.dropdown-item {
                 margin-left: -28px;
             }
 
-            .heading2 span {}
+            .heading2 span {
+                width: auto;
+                font-size: 2.0rem;
+            }
 
+            h1.heading2 {
+                width: auto;
+                display: contents;
+            }
 
+            h3.heading3 {
+                font-size: 1.5rem;
+            }
+
+            h1.heading {
+                font-size: 2.5rem;
+
+            }
+
+            .card-body {
+                width: 296px !important;
+                margin-left: 34px !important;
+            }
+
+            .cardkids {
+                margin-right: 30px;
+                width: 215px;
+            }
+
+            h3#title {
+                font-size: 2.0rem;
+                text-align: left;
+            }
+
+            h3.cardhead {
+                margin-left: -22px;
+            }
+
+            ul.card-text1 p {
+                font-size: 1.5rem;
+                text-align: left;
+                margin-left: -11px;
+            }
+
+            .row ul {
+                margin-top: 10px;
+                margin-left: 40px;
+            }
+
+            .card {
+                margin-left: -0px;
+            }
+
+            p.para3 {
+                font-size: 1.2rem;
+                margin-top: 22px;
+            }
+
+            p.para4 {
+                font-size: 1.2rem;
+                margin-bottom: 40px;
+            }
+
+            div#navbarNavDropdown {
+
+                margin-top: 23px;
+            }
         }
 
         .header-new {
@@ -788,144 +886,6 @@ include 'header.php';
 </head>
 
 <body>
-    <div class="main">
-        <div>
-            <h1 class="heading">Arts Labs</h1>
-        </div>
-        <div class="h3">
-            <h3 class="heading3">Special art labs where your little ones can experiment art in a fun and playful manner
-            </h3>
-        </div>
-        <div>
-            <center>
-                <h1 class="heading2" style="margin-bottom:30px"><span>Toddler Arts Labs</span></h1>
-            </center>
-        </div>
-
-
-        <div class="container">
-            <div class="row childimagewrap">
-                <div class="col-md-6">
-                    <img src="./assets/img/gallery/gallery-1.jpeg" alt="">
-                    <center class="imgdwn"><b>1-3 years <br>700 </b>/ Sessions</center>
-                </div>
-                <div class="col-md-6">
-                    <p class="para1" id="para">Our lab is a magical playground, designed for little
-                        adventurers to let their creativity run wild, plunging into a
-                        whirlwind of colors and artistic madness. Kids will embark
-                        on sensory and artsy escapades that'll supercharge their
-                        motor skills. With our trusty Instructorr leading the charge,
-                        parents can jump in on the action too! Get ready for an
-                        enchanting journey where imagination reigns supreme!</p>
-
-                    <p class="para" id="para"><b>Book your slots prior!
-                            Walk-ins are also welcome, although availability is
-                            not guaranteed.
-                            Please ensure your child is dressed in attire suitable for
-                            potential mess, although we do provide elegant aprons
-                            for your convenience.
-                            You can proudly display your kid's masterpiece at your home.
-                        </b></p>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container2">
-        <div class="row" id="we-are-open-section">
-            <div class="col-md-4">
-                <div class="card" id="we-are-body">
-                    <div class="card-body">
-                        <h3 class="card-title" id="title">We are Open from</h3>
-
-
-                        <ul class="card-text1">
-                            <p>Tuesdays to Sundays<br> 11 am to 7 pm<br> Walk right in or play it safe by<br>reserving
-                                your spot in advance!</p>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="cardp">
-                    <div class="card-body1">
-                        <p class="card-text2">Would you like to visit The
-                            Toddler Art Lab?<br>Please find the available days and times below.</p>
-                        <button class="btn">Book here</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="containercard">
-        <h2>Ready to go steady? Check out our Subscription Plan and click below</h2>
-        <div class="row justify-content-center" id="row1">
-            <div class="col-md-2 mb-5">
-                <div class="card2 h-60">
-                    <div>
-                        <h3 class=cardhead>10 OPEN<br>STUDIO</h3>
-                    </div>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Access to art &<br> craft with
-                            make<br> & take worth<br> Rs.500.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>It includes 10<br> open studio<br>
-                            entries.</li>
-
-                    </ul>
-
-
-                    <div class="cardprice">
-                        <h4>6,000 ₹</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 mb-5">
-                <div class="card2 h-80">
-                    <div>
-                        <h3 class=cardhead>20 OPEN<br>STUDIO</h3>
-                    </div>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Access to art &<br> craft with
-                            make<br> & take worth<br>Rs.700.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>It includes 20<br>open
-                            studio<br>entries.</li>
-
-                    </ul>
-
-
-                    <div class="cardprice">
-                        <h4>11,000 ₹</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 mb-5">
-                <div class="card2">
-                    <div>
-                        <h3 class=cardhead>30 OPEN<br>STUDIO</h3>
-                    </div>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Access to art &<br>craft with
-                            make<br>& take worth<br>Rs.1,000.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>It includes 30<br> open
-                            studio<br>entries.</li>
-                    </ul>
-
-
-                    <div class="cardprice">
-                        <h4>15,000 ₹</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="">
-        <center><button class="btn2">Click Here</button></center>
-    </div>
-
-    <hr style="border: 5px;
-  border-radius: 5px;">
 
 
     <div class="main">
@@ -968,7 +928,7 @@ include 'header.php';
     </div>
     <div class="container2">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 ">
                 <div class="card" style="width: 35rem; height: 22rem">
                     <div class="card-body">
                         <h3 class="card-title" id="title">We are Open from</h3>
@@ -995,7 +955,7 @@ include 'header.php';
     <div class="containercard">
         <h2>Ready to go steady? Check out our Subscription Plan and click below</h2>
         <div class="row justify-content-center" id="row2">
-            <div class="col-md-2 mb-5">
+            <div class="col-md-2 mb-5 cardkids">
                 <div class="card2 h-60">
                     <div>
                         <h3 class=cardhead>10 OPEN<br>STUDIO</h3>
@@ -1014,7 +974,7 @@ include 'header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 mb-5">
+            <div class="col-md-2 mb-5 cardkids">
                 <div class="card2 h-80">
                     <div>
                         <h3 class=cardhead>20 OPEN<br>STUDIO</h3>
@@ -1033,7 +993,7 @@ include 'header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 mb-5">
+            <div class="col-md-2 mb-5 cardkids">
                 <div class="card2">
                     <div>
                         <h3 class=cardhead>30 OPEN<br>STUDIO</h3>
@@ -1057,11 +1017,19 @@ include 'header.php';
     <div class="">
         <center class="btncenter"><button class="btn2">Click Here</button></center>
     </div>
+
+    <script>
+        function redirectToPage() {
+            // Replace 'target_page.html' with the URL of the page you want to redirect to
+            window.location.href = 'book2.php';
+        }
+    </script>
+
 </body>
 
 </html>
 
-<?php
+<!-- <?php
 
-include 'footer2.php'
-    ?>
+// include 'footer2.php'
+?> -->
