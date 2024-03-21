@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black
+}
+
+nav {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 15px;
+}
+
+a:hover {
+    background-color: #eee;
+}
+
+/* Styles for the down arrow icon */
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    vertical-align: top; /* Aligns the arrow vertically in the middle */
+    margin-top: -1px; /* Adjust the top margin to center the arrow */
+    color: rgb(67, 67, 173); /* Change to the color you desire */
+}
+
+.arrow-k {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    vertical-align: top; /* Aligns the arrow vertically in the middle */
+    margin-top: -1px; /* Adjust the top margin to center the arrow */
+    color: pink; /* Change to the color you desire */
+}
+
+/* Styles for submenu options */
+.options {
+    display: none;
+}
+
+/* Styles for submenu options when active */
+.active {
+    display: block;
+}
+
+.centered-content {
+    text-align: center; /* Aligns content in the center */
+}
+
+/* Optionally, you can add some margin to space out the images */
+.centered-content img {
+    margin: 10px; /* Adjust as needed */
+    border-radius: 20px;
+}
+
+.heading {
+    background-color: black;
+    color: #fff;
+}
+img{
+    vertical-align: 0;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown[aria-expanded="true"]::after {
+    border-color: transparent transparent white;
+    top: 40%;
+}
+
+/* Styles for the dropdown content */
+.f-dropdown {
+    display: flex; /* Display items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+    justify-content: center;
+    background-color: #fff; /* Background color */
+    padding: 10px; /* Add padding */
+}
+
+.f-dropdown li {
+    margin-right: 20px; /* Adjust spacing between items */
+}
+
+.f-dropdown a {
+    color:black; /* Text color */
+    text-decoration: none;
+    padding: 5px 10px; /* Adjust padding */
+}
+.f-dropdown li a{
+    color:black
+}
+
+.f-dropdown a:hover {
+    background-color: #eee; /* Hover background color */
+}
+
+#drop1{
+    background-color: pink !important;
+   
+   
+}
+#drop2{
+    background-color:rgb(67, 67, 173) !important;
+
+}
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .f-dropdown {
+        display: block; /* Change display to block for smaller screens */
+    
+    }
+    .f-dropdown li {
+        display: block; /* Display items in a row */
+    
+    }
+    #drop1 {
+        max-width: 220px !important;
+        margin: auto;
+       
+    }
+    #drop2 {
+        max-width: 220px !important;
+        margin: auto;
+       
+    }
+    
+   
+}
+
+
+
+
+
+/* /Banner style */
+
+.banner{
+    width: 100%;
+    /* height: 90vh; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+
+
+
+/* container2 styles */
+
+.paragraph-wrap{
+   text-align: center !important;
+   margin-top: 40px;
+   margin-bottom: 40px;
+}

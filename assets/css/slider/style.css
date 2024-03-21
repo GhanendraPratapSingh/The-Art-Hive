@@ -1,0 +1,124 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+}
+
+html,body{
+  overflow-x: hidden;
+
+}
+
+
+
+
+
+button {
+  
+  display: inline-block;
+
+ background-color: #00467a;
+    color: #ffffff;
+  padding: .3rem 3rem;
+  /*color: white;*/
+  height: 41px;
+  border-radius: 10px;
+
+}
+
+
+.container {
+ 
+  border-radius: 10px;
+}
+/*a {*/
+/*  display: inline-block;*/
+/*  text-align: center;*/
+/*  width: 200px;*/
+/*   background: #e91a4e !important; */
+/*  text-decoration: none;*/
+/*  padding: .7rem 3rem;*/
+/*   border-radius: 4px;*/
+/*}*/
+/*    a:hover{*/
+/* color: white;*/
+/*text-decoration: none;*/
+
+/*}*/
+ 
+/*form{*/
+/*  padding: 8px;*/
+/* border-radius: 10px;*/
+/* width:100%;*/
+/*}*/
+option{
+ width: 100%;
+}
+.location{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+input[type="checkbox"]{
+ margin-left: 10px;
+
+}
+
+span{
+  margin-left: 5px;
+}
+
+
+
+.mobile{
+  display: none;
+}
+
+.laptop{
+  display: block;
+}
+.thanku{
+  color: #a01638;
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 775px){
+input[type="checkbox"]{
+ margin-left: 10px;
+ margin-bottom: 10px;
+}
+/*h4{*/
+/*  font-size: medium;*/
+/*}*/
+.location{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+/*h4{*/
+/*  font-size: 15px;*/
+/*}*/
+button{
+  width: 100%;
+  display: block;
+  margin: 5px auto;
+}
+/*a{*/
+/*  width: 100%;*/
+/*  display: block;*/
+/*      text-align: center;*/
+/*}*/
+
+.mobile{
+  display: block;
+}
+
+.laptop{
+  display: none;
+}
+
+}
+
+/*.footer-margin{*/
+/*  margin-top: 100px;*/
+/*}*/
