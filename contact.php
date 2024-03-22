@@ -68,7 +68,7 @@ include ('connect.php');
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    /* z-index: 1000; */
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -293,43 +293,6 @@ include ('connect.php');
     opacity: 0.2;
   }
 
-  @media (max-width: 850px) {
-    .form {
-      grid-template-columns: 1fr;
-    }
-
-    .contact-info:before {
-      bottom: initial;
-      top: -75px;
-      right: 65px;
-      transform: scale(0.95);
-    }
-
-    .contact-form:before {
-      top: -13px;
-      left: initial;
-      right: 70px;
-    }
-
-    .square {
-      transform: translate(140%, 43%);
-      height: 350px;
-    }
-
-    .big-circle {
-      bottom: 75%;
-      transform: scale(0.9) translate(-40%, 30%);
-      right: 50%;
-    }
-
-    .text {
-      margin: 1rem 0 1.5rem 0;
-    }
-
-    .social-media {
-      padding: 1.5rem 0 0 0;
-    }
-  }
 
   @media (max-width: 480px) {
     .container-102 {
@@ -379,18 +342,230 @@ include ('connect.php');
     }
   }
 
+  @media only screen and (max-width: 768px) {
+    .form {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-info:before {
+      bottom: initial;
+      top: -75px;
+      right: 65px;
+      transform: scale(0.95);
+    }
+
+    .contact-form:before {
+      top: -13px;
+      left: initial;
+      right: 70px;
+    }
+
+    .square {
+      transform: translate(140%, 43%);
+      height: 350px;
+    }
+
+    .big-circle {
+      bottom: 75%;
+      transform: scale(0.9) translate(-40%, 30%);
+      right: 50%;
+    }
+
+    .text {
+      margin: 1rem 0 1.5rem 0;
+    }
+
+    .social-media {
+      padding: 1.5rem 0 0 0;
+
+    }
+
+    .navbar {
+      position: fixed;
+      top: 168px;
+      width: 100%;
+      z-index: 1000;
+      background-color: transparent !important;
 
 
-  .credit {
-    text-align: center;
-    color: #fff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+    }
 
-  .credit a {
-    text-decoration: none;
-    color: #FBAB7E;
-    font-weight: bold;
+    /* span.navbar-toggler-icon {
+            float: right;
+            position: fixed;
+            top: 162px;
+            /* width: 100%; */
+    /* z-index: 1000; */
+
+
+    .collapse.show {
+      justify-content: left;
+      margin-top: 24px !important;
+    }
+
+    ul.navbar-nav {
+      margin-bottom: -55px !important;
+      margin-right: 225px !important;
+    }
+
+    .headinghead {
+      font-size: 10px;
+    }
+
+    .headlogo img {
+      width: 35%;
+    }
+
+    .container-fluid {
+      background-color: white;
+      margin-top: -8px;
+    }
+
+    .container-fluid :hover {
+      box-decoration-break: none;
+    }
+
+    .navbar-toggler {
+      position: absolute;
+      right: 10px;
+
+    }
+
+
+
+    /* Navbar styles */
+    .navbar-collapse {
+      background-color: #fff;
+      /* Background color of the navbar */
+      position: fixed;
+      /* Fixed position for the navbar */
+      top: 0;
+      /* Positioning at the top of the viewport */
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1000;
+      /* Higher z-index to overlap content */
+      overflow-y: auto;
+      max-height: calc(100vh - 56px);
+      /* Adjust 56px according to your navbar height */
+      /* Allow vertical scrolling */
+      max-height: 100vh;
+      /* Maximum height of the navbar */
+      padding: 20px;
+      /* Padding for the content inside the navbar */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* transform: translateX(-100%); */
+      /* Initially translate the navbar off-screen */
+      transition: transform 0.3s ease-in-out;
+      /* Smooth transition for animation */
+    }
+
+    /* Show the navbar when it's expanded */
+    .navbar-collapse.show {
+      transform: translateX(46%);
+      /* Move the navbar into view */
+    }
+
+    .navbar-collapse {
+      max-height: calc(100vh - 56px);
+      overflow-y: auto;
+    }
+
+
+
+    /* Navbar items styles */
+    .nav-item {
+      padding: 10px 0;
+      /* Adjust padding for navbar items */
+    }
+
+    .nav-link {
+      color: #333;
+      /* Text color for navbar links */
+    }
+
+    /* Dropdown menu styles */
+    .dropdown-menu {
+      background-color: #ffc107;
+      /* Background color for dropdown menu */
+    }
+
+    .dropdown-menu li {
+      margin-right: 0;
+      /* Remove margin for dropdown items */
+    }
+
+    /* Body styles when the navbar is open */
+    body.navbar-open {
+      overflow: hidden;
+      /* Hide vertical scrollbar on the body */
+    }
+
+    /* Content container styles */
+    .content-container {
+      width: 50vw;
+      padding: 20px;
+      /* Adjust as needed based on your navbar height */
+    }
+
+    .other-content {
+      position: relative;
+      /* Ensure other content is positioned relative */
+      z-index: 1;
+      /* Set a lower z-index to keep it below the navbar */
+    }
+
+    .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
+
+    button.navbar-toggler {
+      margin-top: -225px !important;
+      font-size: 2.0rem;
+    }
+
+    #drop1 {
+      min-width: 14rem;
+      padding-left: 25px;
+      margin-top: -26px;
+    }
+
+    #drop2 {
+      min-width: 14rem;
+      padding-left: 25px;
+      margin-top: -26px;
+    }
+
+    ul li {
+      margin-right: 24px;
+    }
+
+    a.dropdown-item {
+      margin-left: -28px;
+    }
+
+    ul.navbar-nav {
+      align-items: flex-start;
+      margin-left: 4px;
+    }
+
+
+
+    .credit {
+      text-align: center;
+      color: #fff;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .credit a {
+      text-decoration: none;
+      color: #FBAB7E;
+      font-weight: bold;
+    }
   }
 </style>
 

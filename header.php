@@ -457,27 +457,6 @@
         color: black;
     }
 
-    .is-drilldown-submenu-parent>a:after {
-        border-color: transparent transparent transparent #fff;
-    }
-
-    .js-drilldown-back>a:before {
-        border-color: transparent #fff transparent transparent;
-    }
-
-    .dropdown.menu>li.is-dropdown-submenu-parent>a:after {
-        border-color: #fff transparent transparent;
-    }
-
-    .is-dropdown-submenu .is-dropdown-submenu-parent.opens-right>a:after {
-        border-color: transparent transparent transparent #fff;
-    }
-
-
-
-
-
-
     /*------------sub menu style------------------*/
 </style>
 
@@ -509,24 +488,30 @@
                         <a class="nav-link active" aria-current="page" href="#">ABOUT US</a>
                     </li>
 
-                    <li class="nav-item dropdown sub-menu-item with-options" id="adults-menu">
-                        <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <li class="nav-item dropdown sub-menu-item with-options" id="kids-menu">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             KIDS
                         </a>
                         <ul id="drop1" class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Long Term Program</a></li>
                             <li><a class="dropdown-item" href="#">Weekend workshops</a></li>
-                            <li><a class="dropdown-item" href="#">Art Labs</a>
-                                <ul class="menu">
-                                    <li><a href="d-kids-art-labs">Kids Labs</a></li>
-                                    <li><a href="d-toddler-labs">Toddler Lab</a></li>
-
+                            <li class="nav-item dropdown sub-menu-item with-options" id="art-labs-menu"
+                                aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                                    Art Labs
+                                </a>
+                                <ul class="dropdown-menu" id="art-labs-submenu">
+                                    <li><a class="dropdown-item" href="d-kids-art-labs">Kids Labs</a></li>
+                                    <li><a class="dropdown-item" href="d-toddler-labs">Toddler Lab</a></li>
                                 </ul>
                             </li>
                             <li><a class="dropdown-item" href="#">Private Art Party</a></li>
                         </ul>
                     </li>
+
+
+
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -708,23 +693,42 @@
 
     </div>
     </nav>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            document.addEventListener('click', function (event) {
-                const navbar = document.getElementById('navbarNavDropdown');
-                const navbarToggler = document.querySelector('.navbar-toggler');
+            const artLabsMenu = document.getElementById('art-labs-menu');
+            const artLabsSubmenu = document.getElementById('art-labs-submenu');
 
-                // Check if the clicked element is outside the navbar and navbar-toggler button
-                if (!navbar.contains(event.target) && event.target !== navbarToggler) {
-                    // Check if navbar is open, then close it
-                    if (navbar.classList.contains('show')) {
-                        navbar.classList.remove('show');
-                    }
+            // Add click event listener to Art Labs menu item
+            artLabsMenu.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent default link behavior
+                event.stopPropagation(); // Prevent parent dropdown from closing
+                artLabsSubmenu.classList.toggle('show'); // Toggle submenu visibility
+            });
+
+            // Close submenu when clicking outside
+            document.addEventListener('click', function (event) {
+                if (!artLabsMenu.contains(event.target)) {
+                    artLabsSubmenu.classList.remove('show');
                 }
             });
         });
     </script>
+    <script>(function ($) {
+            $(document).ready(function () {
+                $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $(this).parent().siblings().removeClass('open');
+                    $(this).parent().toggleClass('open');
+                });
+            });
+        })(jQuery);
+        /* http://www.bootply.com/nZaxpxfiXz */</script>
+
+
+
+
+
 
     </div>
     </div>

@@ -35,6 +35,39 @@ include 'header.php';
             padding: 20px;
         }
 
+        /*----------- hover with text-------------- */
+        /* Basic button styles */
+        .btn-primary {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Styles for the text to be shown on hover */
+        .btn-primary:hover::after {
+            content: "Pay Now";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            color: #3498db;
+            padding: 5px 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            opacity: 1;
+        }
+
+        .cardprice {
+            position: relative;
+            display: inline-block;
+        }
+
+        /*------------- hover with text end -----------------*/
         .heading {
             text-align: center;
             margin-bottom: 20px;
@@ -644,9 +677,7 @@ include 'header.php';
             }
 
             ul.navbar-nav {
-                margin-bottom: -55px !important;
-                margin-right: 180px !important;
-                margin-top: -415px !important;
+                margin-left: 10px !important;
 
             }
 
@@ -879,8 +910,26 @@ include 'header.php';
             color: black;
         }
 
-        div#navbarNavDropdown {
-            display: flex !important;
+        .cardprice button {
+            background-color: black;
+            border: none;
+            padding: 2px 11px;
+            font-size: 1.5rem;
+        }
+
+        .cardprice a {
+            color: white;
+            text-decoration: none !important;
+            background-color: black;
+        }
+
+        .btn-primary:hover {
+            color: white;
+            background-color: black;
+        }
+
+        ul.navbar-nav {
+            margin-left: 215px;
         }
     </style>
 </head>
@@ -969,8 +1018,12 @@ include 'header.php';
                     </ul>
 
 
+                    <!-- <div class="cardprice">
+                        <button><a href="" class="btn-primary">6,000 ₹</a></button>
+
+                    </div> -->
                     <div class="cardprice">
-                        <h4>6,000 ₹</h4>
+                        <button class="btn-primary">6,000 ₹</button>
                     </div>
                 </div>
             </div>
@@ -988,8 +1041,13 @@ include 'header.php';
                     </ul>
 
 
+                    <!-- <div class="cardprice">
+                        <button><a href="" class="btn-primary">11,000 ₹</a>
+
+                    </div> -->
+
                     <div class="cardprice">
-                        <h4>11,000 ₹</h4>
+                        <button class="btn-primary">11,000 ₹</button>
                     </div>
                 </div>
             </div>
@@ -1006,17 +1064,21 @@ include 'header.php';
                     </ul>
 
 
+                    <!-- <div class="cardprice">
+                        <button><a href="" class="btn-primary">15,000 ₹</a></button>
+
+                    </div> -->
                     <div class="cardprice">
-                        <h4>15,000 ₹</h4>
+                        <button class="btn-primary">15,000 ₹</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="">
+    <!-- <div class="">
         <center class="btncenter"><button class="btn2">Click Here</button></center>
-    </div>
+    </div> -->
 
     <script>
         function redirectToPage() {
@@ -1024,6 +1086,8 @@ include 'header.php';
             window.location.href = 'book2.php';
         }
     </script>
+
+
 
 </body>
 
